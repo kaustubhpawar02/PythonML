@@ -2,7 +2,7 @@
 
 def DisplayGrade(Marks):
     if Marks >= 75:
-        print("Distinction")
+        return "Distinction"
     elif Marks >= 60:
         print("First Class")
     elif Marks >= 50:
@@ -14,6 +14,9 @@ def DisplayGrade(Marks):
 def main():
     Marks = int(input("Enter marks: "))
     DisplayGrade(Marks)
+
+    result = DisplayGrade(Marks)
+    print(result)
 
 
 if __name__ == "__main__":
