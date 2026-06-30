@@ -6,7 +6,7 @@ def DisplayGrade(Marks):
     elif Marks >= 60:
         return "First Class"
     elif Marks >= 50:
-        print("Second Class")
+        return "Second Class"
     else:
         print("Fail")
 
