@@ -8,12 +8,11 @@ def DisplayGrade(Marks):
     elif Marks >= 50:
         return "Second Class"
     else:
-        print("Fail")
+        return "Fail"
 
 
 def main():
     Marks = int(input("Enter marks: "))
-    DisplayGrade(Marks)
 
     result = DisplayGrade(Marks)
     print("Grade :",result)
