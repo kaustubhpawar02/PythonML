@@ -2,7 +2,6 @@
 
 
 Square = lambda No : No * No
-print(Square)
 
 def main():
     

@@ -1,7 +1,6 @@
 # Write a lambda function which accepts two numbers and return addition
 
 Add = lambda No1 ,No2 : No1 + No2
-print(Add)
 
 def main():
 

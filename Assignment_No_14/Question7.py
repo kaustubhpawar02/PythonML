@@ -2,7 +2,6 @@
 
 Check = lambda No : True if No % 5 == 0 else False
 
-
 def main():
 
     value = int(input("Enter a number :"))

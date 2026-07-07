@@ -1,8 +1,6 @@
 # Write a lambda function which accept two number and return maximum number
 
 Maximum = lambda No1 , No2 : No1 if No1>No2 else No2
-print(Maximum)
-
 
 
 def main():
