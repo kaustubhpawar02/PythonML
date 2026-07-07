@@ -2,4 +2,11 @@
 
 Number_Cube = lambda No : No ** 3
 
-def main
+def main():
+    value = int(input("Enter a number :"))
+    Result = Number_Cube(value)
+
+    print(f"The Cube of {value} is {Result}")
+     
+if __name__ == "__main__":
+    main()
