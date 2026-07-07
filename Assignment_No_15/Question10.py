@@ -1,4 +1,4 @@
-"""Write """
+"""Write a lambda function using filter() and return even numbers """
 
 Even_Numbers = lambda No : No % 2 == 0
 
@@ -21,6 +21,9 @@ def main():
     Result = list(filter(Even_Numbers,Data))
 
     print(f"Even number of list is : {Result}")
+    print("Count of Even Numbers is : ",len(Result))
+
+
 
 if __name__ == "__main__":
     main()
