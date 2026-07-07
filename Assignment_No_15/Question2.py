@@ -14,9 +14,9 @@ def main():
         Data.append(no)
     print(f"list before Filtering each element: {Data}")
 
-    Even_Numbers = list(map(Even,Data))
+    Even_Numbers = list(filter(Even,Data))
 
-    print(f"After filter returing the list of Even Numbers\n")
+    print(f"After filter returing the list of Even Numbers : {Even_Numbers}\n")
     
 
 if __name__ == "__main__":
