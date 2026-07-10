@@ -1,0 +1,12 @@
+def Display():
+
+    for i in range(10,0,-1):
+        print(i,end=" ")
+
+
+def main():
+    print("Displaying numbers from 10 to 1")
+
+    Display()
+
+main()
