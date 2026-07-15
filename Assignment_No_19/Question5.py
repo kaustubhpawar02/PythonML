@@ -1,12 +1,19 @@
 from functools import reduce
 
-def CHK(no):
-    return no%2 == 0
+def ChkPrime(No):
+    if No<=1:
+        return False
+    
+    for i in range (2,No):
+        if No % i == 0:
+            return False
+        
+    return True
 
 def Inc(no):
-    return no**2
+    return no*2
 
-Addition = lambda x,y : x+y
+Maximum = lambda x,y : x if x>y else y
 
 def main():
     Data = []
@@ -18,13 +25,13 @@ def main():
     for i in range(No):
         Data.append(int(input()))
 
-    Result1 = list(filter(CHK, Data))
+    Result1 = list(filter(ChkPrime, Data))
     print("Data after filtr is :",Result1)
 
     Result2 = list(map(Inc,Result1))
     print("Data after map is :",Result2)
 
-    Result3 = reduce(Addition,Result2)
+    Result3 = reduce(Maximum,Result2)
     print("Data after reduce is :",Result3)
 
 
