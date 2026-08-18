@@ -52,7 +52,47 @@ def Student_Result(filename):
 
     # Count how many students Failed (FinalResult = 0)
     print("Count of Students Failed :",(df["FinalResult"]==0).sum())
+
+    print(Border)
+
+    # 3.Using pandas functions,calculate and display:
+
+    # Average StudyHours
+    print("Average StudyHours :",(df["StudyHours"]).mean())
+
+    print(Border)
+
+    # Average Attendance
+    print("Average Attendance :",(df["Attendance"]).mean())
+
+    print(Border)
+
+    # Maximum PreviousScore
+    print("Max PreviousScore :",df["PreviousScore"].max())
+
+    print(Border)
+
+    # Minimum SleepHours
+    print("Minimum SleepHours :",df["SleepHours"].min())
+
+    print(Border)
+
+    # 4. Use value_counts() to analyze the distribution of FinalResult.
+    # Calculate the percentage of Pass and Fail student
+    # Is the dataset balanced ? Justify your answer
+
+    print(df["FinalResult"].value_counts())
+
+    print(Border)
+
+    print("Percentage of Pass Students :",(df["FinalResult"]==1).mean()*100)
+    print("Percentage of Fail Students :",(df["FinalResult"]==0).mean()*100)
+
+    print(Border)
+
+    # “The dataset is slightly imbalanced, with a 60-40 distribution.”
     
+    print(Border)
 
 
 
