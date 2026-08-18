@@ -28,6 +28,11 @@ def Student_Result(filename):
 
     print(Border)
 
+    # List column names
+    print(df.columns)
+
+    print(Border)
+
 
 
 def main():
