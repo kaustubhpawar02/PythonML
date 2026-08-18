@@ -8,7 +8,7 @@ def Student_Result(filename):
     Border = "-"*100
     print(Border)
 
-    # Write a Python program to load the file student_performance_ml.csv using pandas
+    # 1.Write a Python program to load the file student_performance_ml.csv using pandas
     # Display :
 
     # First 5 records
@@ -32,6 +32,16 @@ def Student_Result(filename):
     print("Columns names are :",df.columns)
 
     print(Border)
+
+    # Data types of each column
+    print("Data type of each column :\n",df.dtypes)
+
+    print(Border)
+
+    # 2.WAP to :
+
+    #Display total number of students in the dataset
+    print("Total no of students in dataset :",len(df))
 
 
 
