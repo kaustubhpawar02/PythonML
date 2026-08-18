@@ -43,6 +43,17 @@ def Student_Result(filename):
     #Display total number of students in the dataset
     print("Total no of students in dataset :",len(df))
 
+    print(Border)
+
+    # Count how many students passed (FinalResult = 1)
+    print("Count of Students Passed :",(df["FinalResult"]==1).sum())
+
+    print(Border)
+
+    # Count how many students Failed (FinalResult = 0)
+    print("Count of Students Failed :",(df["FinalResult"]==0).sum())
+    
+
 
 
 def main():
