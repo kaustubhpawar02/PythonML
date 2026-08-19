@@ -159,6 +159,12 @@ def Student_Result(filename):
     # 10.Plot SleepHours against FinalResults.
     # Does sleeping more guarantee success ? Explain.
 
+    plt.scatter(df["SleepHours"],df["FinalResult"])
+    plt.xlabel("Sleep Hours")
+    plt.ylabel("Final result")
+    plt.title("SleepHours v/s Final result")
+    plt.show()
+
     
     
 
