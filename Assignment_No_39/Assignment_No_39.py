@@ -85,3 +85,22 @@ for d in depth:
     Y_pred = model.predict(X_test)
     accuracy = accuracy_score(Y_test,Y_pred)
     print(f"Accuracy of model with depth {d} is :{accuracy*100}")
+
+
+# Q7 
+# Use the trained model to predict result for a student with:
+# - StudyHours = 6
+# - Attendance = 85
+# - PreviousScore = 66
+# - AssignmentsCompleted = 7
+# - SleepHours = 7
+#
+# Will the student Pass or Fail?
+
+new_student = [[6, 85, 66, 7, 7]]
+prediction = model.predict(new_student)
+if(prediction[0]==1):
+    print("The new student will be pass..")
+
+else:
+    print("The new student will be fail..")
