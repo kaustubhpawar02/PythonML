@@ -46,4 +46,5 @@ print("Accuracy is :",Accuracy)
 # Display it using ConfusionMatrixDisplay.
 
 confusion_mat = confusion_matrix(Y_test,Y_pred)
-print("Confusion Matrix is :",confusion_mat)
+print(f"Confusion Matrix is :")
+print(confusion_mat)
