@@ -60,7 +60,28 @@ print(confusion_mat)
 train_pred = model.predict(X_train)
 test_pred = model.predict(X_test)
 
-print(train_pred)
-print(test_pred)
+train_acc = accuracy_score(Y_train,train_pred)
+test_acc = accuracy_score(Y_test,test_pred)
 
-# trainin Accuracy = 100% 
+print("Training Accuracy is : ",train_acc*100)
+print("Testing Accuracy is : ",test_acc*100)
+
+# trainin Accuracy = 100%  and testing accuracy = 100% . Since both accuracies are equal and very high, the model is neither overfitting nor underfitting and performs perfectly on the given dataset.
+
+# Q6 
+# Train three Decision Tree models with:
+# - max_depth = 1
+# - max_depth = 3
+# - max_depth = None
+#
+# Compare their testing accuracies and write
+# your observations.
+
+depth =  [1,3,None]
+
+for d in depth:
+    model = DecisionTreeClassifier(max_depth=d)
+    model.fit(X_train,Y_train)
+    Y_pred = model.predict(X_test)
+    accuracy = accuracy_score(Y_test,Y_pred)
+    print(f"Accuracy of model with depth {d} is :{accuracy*100}")
