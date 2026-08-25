@@ -39,7 +39,7 @@ print("Predicted Values :",Y_pred)
 # Display the result in percentage format.
 
 Accuracy = accuracy_score(Y_test,Y_pred)
-print("Accuracy is :",Accuracy)
+print("Accuracy is :",Accuracy*100)
 
 # Q4 
 # Generate confusion matrix using sklearn.
@@ -48,3 +48,19 @@ print("Accuracy is :",Accuracy)
 confusion_mat = confusion_matrix(Y_test,Y_pred)
 print(f"Confusion Matrix is :")
 print(confusion_mat)
+
+# Q5 
+# Calculate:
+# - Training accuracy
+# - Testing accuracy
+#
+# Compare both and comment whether the model is
+# overfitting or underfitting.
+
+train_pred = model.predict(X_train)
+test_pred = model.predict(X_test)
+
+print(train_pred)
+print(test_pred)
+
+# trainin Accuracy = 100% 
