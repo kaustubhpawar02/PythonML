@@ -1,21 +1,16 @@
-""" """
-""" """
+#Q1: Write a program which accept file name from user and check wheather that file present in current directory or not.
 
 import os
 
-
 def main():
-    filename = input("Enter File Name :")
-    fobj = open(filename,'r')
+    file_name = input("Enter the name of file with extension: ")
     
-    ret = os.path.exists(filename)
+    ret = os.path.exists(file_name)
 
-    if(ret == True):
-        print("File is present in current directory")
+    if(ret):
+        print(f"{file_name} is present in current directory..")
     else:
-        print("There is no such file")
+        print(f"{file_name} is not present in current directory..")
 
-    fobj.close()
-        
-if __name__ == "__main__":
+if __name__=="__main__":
     main()
