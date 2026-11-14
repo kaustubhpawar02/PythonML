@@ -18,3 +18,14 @@ print(df)
 
 print("Scaled Dataset:")
 print(scaled_data)
+
+
+"""Original Dataset:
+[[   25 20000]
+ [   30 40000]
+ [   35 80000]]
+ 
+Scaled Dataset:
+[[-1.22474487 -1.06904497]
+ [ 0.         -0.26726124]
+ [ 1.22474487  1.33630621]] """
