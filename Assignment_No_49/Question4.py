@@ -33,3 +33,8 @@ p2 = scaled_data[1]
 
 distance_after = np.sqrt(np.sum((p2-p1)**2))
 print("Distance After Scaling :",distance_after)
+
+
+"""Before feature scaling, the Euclidean distance is very large because the income feature has much larger numerical values than age. After applying StandardScaler, both features are converted to a common scale, reducing the dominance of income. Therefore, feature scaling improves distance calculations in algorithms such as KNN and K-Means.
+
+Important concept: The distance decreases here, but feature scaling does not always decrease Euclidean distance. It changes the contribution of each feature to the distance."""
